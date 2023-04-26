@@ -21,7 +21,7 @@ public class BaseTest
 	   
 	   {
 		System.setProperty("webdriver.chrome.driver", "E://MyAppiumWorkPlace//ExtentReports//drivers//chromedriver.exe");
-		ChromeOptions op =	new ChromeOptions();
+		ChromeOptions op =new ChromeOptions();
 		op.addArguments("--disable-notifications");
 		driver = new ChromeDriver(op);
 		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
@@ -33,8 +33,6 @@ public class BaseTest
 		  File source =  driver.getScreenshotAs(OutputType.FILE);
 		  //String destination = System.getProperty("user.dir")+"//Extent Report//"+testCaseName+".png";
 		 String destination = "E://MyAppiumWorkPlace//AppiumFrameworkDesign//Extent Report//"+testCaseName+".png";
-	
-
 		  FileUtils.copyFile(source, new File(destination));
 		  return destination;
 	   }
