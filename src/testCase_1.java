@@ -17,9 +17,7 @@ public class testCase_1	extends BaseTest
 
 	@Test(enabled = false) 
 	public void verifyTitle()
-	{
-	
-		
+	{	
 	    driver.get("https://www.redbus.in/");
 	    String ActutalTitle = driver.getTitle();
 	    Assert.assertEquals(ActutalTitle,"Red Bus" );
@@ -28,17 +26,12 @@ public class testCase_1	extends BaseTest
 	@Test
 	public void testDemo() throws InterruptedException, AWTException
 	{
-
-		
+	
 	    driver.get("https://www.redbus.in/");
-
 	    driver.manage().window().maximize();
-
-
 	    WebElement   FromElement	 = driver.findElement(By.id("src"));
 	    FromElement.sendKeys("Hyderabad");
 	    Thread.sleep(5000);
-
 	    Robot key = new Robot();
 	    key.keyPress(KeyEvent.VK_ENTER);
 
@@ -53,21 +46,8 @@ public class testCase_1	extends BaseTest
 	    
 	    
 	    WebElement   date = driver.findElement(By.xpath("//input[@id='onward_cal']"));
-	   // 
 	    date.sendKeys("27-Apr-2023");
-	    Thread.sleep(5000);
-
-	    //27-Apr-2023
-	    
-	    
-
-
-
-
-
-
-
-
+	    Thread.sleep(5000);	    	    
 	}
 
 }
