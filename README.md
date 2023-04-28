@@ -7,6 +7,15 @@ Extent Reports is an open-source reporting library useful for test automation. I
 
 
 
+## Features
+
+- Generate HTML report.
+- Attach Screenshot.
+- Details about Testing activity such developer , tester.
+- Customized template.
+
+
+
 
 ## Screenshots
 
@@ -17,9 +26,4 @@ Extent Reports is an open-source reporting library useful for test automation. I
 
 
 
-## Features
 
-- Generate report HTML.
-- Attach Screenshot.
-- Details about Testing activity such developer , tester.
-- Customized template.
